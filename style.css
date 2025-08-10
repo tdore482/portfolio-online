@@ -854,3 +854,13 @@ button[type="submit"]:hover {
         width: 100%;
     }
 }
+.success-message {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00ff3c;
+    color: #ffffff;
+    border: 1px solid #00ff3c;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
