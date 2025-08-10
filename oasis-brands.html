@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisna Cuabo Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-hero">
+            <img src="images/OasisBrands/OHSI.png" alt="Oasis Brands Hero">
+            <h1>The Creative and Innovative Engine driving African digital disruption.</h1>
+        </section>
+
+        <section class="project-intro">
+             <div>
+                <h3>CLIENT</h3>
+                <p>Oasis Brands</p>
+            </div>
+            <div>
+                <h3>PROJECT TYPE</h3>
+                <p>Web Design</p>
+            </div>
+            <div class="project-description">
+                 <p>Design for Oasis Brands (UI/UX Design Process)</p>
+                <p>Oasis Brands is a forward-thinking company specializing in branding and design solutions. To enhance its digital presence, a strategic UI/UX approach was implemented to create an engaging and user-friendly experience. This case study explores the key design decisions made in crafting an immersive website for Oasis Brands.</p>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <img src="images/OasisBrands/O1.png" alt="Oasis Brands Gallery Image 1">
+            <img src="images/OasisBrands/O2.png" alt="Oasis Brands Gallery Image 2">
+            <img src="images/OasisBrands/O3.png" alt="Oasis Brands Gallery Image 2">
+            <img src="images/OasisBrands/O4.png" alt="Oasis Brands Gallery Image 2">
+            <img src="images/OasisBrands/O5.png" alt="Oasis Brands Gallery Image 2">
+        </section>
+
+        <section class="project-features">
+            <div class="feature-column">
+                <h3>Visual Design</h3>
+                <ul>
+                    <li><strong>Cut-Out Imagery & Logo-Type Elements:</strong> Used to reflect Oasis Brands' creativity and vision.</li> <br>
+                    <li><strong>Color Palette & Typography:</strong> A curated Oasis color scheme with strategic orange accents.</li> <br>
+                    <li><strong>Visual Harmony:</strong> Consistent style and typography reinforce brand identity.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Navigation & Layout</h3>
+                <ul>
+                    <li><strong>Progressive Disclosure:</strong> Animations in the "Our Services" section reveal content in stages.</li> <br>
+                    <li><strong>Hover Interactions:</strong> Strategically placed to create a guided journey.</li> <br>
+                    <li><strong>Structured Engagement:</strong> Each interaction encourages intuitive exploration.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Core Features</h3>
+                 <ul>
+                    <li><strong>Animated Service Reveal:</strong> Keeps users engaged while presenting complex information gradually.</li> <br>
+                    <li><strong>Interactive Hover Effects:</strong> Enhances user experience and interactivity.</li> <br>
+                    <li><strong>Brand-Focused Visual Integration:</strong> Imagery and logo-type designs consistently align with the brand's creative mission.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Outcome & Impact</h3>
+                 <ul>
+                    <li>Users experienced fluid, engaging storytelling without cognitive overload.</li> <br>
+                    <li>The design reinforced Oasis Brands' image as a visionary, creative leader.</li> <br>
+                    <li>Increased engagement and smoother content absorption through interactive features.</li>
+                </ul>
+            </div>
+        </section>
+         <div class="back-to-work">
+            <a href="index.html#work">Back to My Work</a>
+        </div>
+    </main>
+
+    <footer>
+       </footer>
+           <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    </div>
+    <script src="script.js"></script>
+        <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

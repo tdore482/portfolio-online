@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patient Care Project</title>
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-hero">
+            <img src="images/PCH.png" alt="Patient Care Hero" />
+            <h1>Designing an Inclusive Telemedicine Interface for Patient Care</h1>
+        </section>
+
+        <section class="project-intro">
+            <div>
+                <h3>CLIENT</h3>
+                <p>Patient Care</p>
+            </div>
+            <div>
+                <h3>PROJECT TYPE</h3>
+                <p>Web Design</p>
+            </div>
+            <div class="project-description">
+                <p>
+                    The Patient Care platform was designed to provide a seamless and engaging telemedicine experience for patients, doctors, and partners. The goal was to create an intuitive, accessible, and visually appealing web interface.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <img src="images/PatientCare/PC1.png" alt="Patient Care Screenshot 1" class="project-img" onclick="openModal(this)"/>
+            <img src="images/PatientCare/PC2.png" alt="Patient Care Screenshot 2" class="project-img" onclick="openModal(this)"/>
+            <img src="images/PatientCare/PC3.png" alt="Patient Care Screenshot 3" class="project-img" onclick="openModal(this)"/>
+            <img src="images/PatientCare/PC4.png" alt="Patient Care Screenshot 4" class="project-img" onclick="openModal(this)"/>
+        </section>
+
+        <section class="project-features">
+            <div class="feature-column">
+                <h3>Visual Design</h3>
+                <ul>
+                    <li><strong>Color Scheme:</strong> Soft, calming tones (purples, greens, whites) for a medical and trustworthy feel.</li>
+                    <li><strong>Typography:</strong> Clean, sans-serif fonts for readability.</li>
+                    <li><strong>Icons & Imagery:</strong> Intuitive visuals to aid quick understanding.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Navigation & Layout</h3>
+                <ul>
+                    <li><strong>Minimalist Structure:</strong> Clear hierarchy for easy navigation.</li>
+                    <li><strong>CTA Buttons:</strong> Prominent for booking and accessing records.</li>
+                    <li><strong>Responsive Design:</strong> Optimized for all devices.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Core Features</h3>
+                <ul>
+                    <li><strong>User-Specific Portals:</strong> Simple access for patients, doctors, and partners.</li>
+                    <li><strong>Real-Time Booking & Alerts:</strong> Streamlined scheduling.</li>
+                    <li><strong>Accessibility:</strong> Features like voice commands and larger fonts.</li>
+                </ul>
+            </div>
+            <div class="feature-column">
+                <h3>Outcome & Impact</h3>
+                <ul>
+                    <li>Increased patient-doctor interaction through intuitive design.</li>
+                    <li>Improved accessibility for diverse users.</li>
+                    <li>Strong brand identity and user trust.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="back-to-work">
+            <a href="index.html#work">Back to My Work</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p><strong>Wilford Theodore Michongwe</strong></p><br>
+            <p><strong>theodoremichongwe@gmail.com</strong></p><br>
+            <p><strong>Blantyre, Malawi</strong></p>
+            <div class="social-links">
+                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

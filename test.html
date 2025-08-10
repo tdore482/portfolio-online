@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .hero-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .port-text {
+            font-size: 8vw;
+            font-weight: bold;
+            margin-bottom: 2vh;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .folio-text-container {
+            display: flex;
+            align-items: center;
+        }
+        .folio-text {
+            font-size: 20vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+        .folio-text.f {
+            margin-right: -1vw; /* Adjust for kerning */
+        }
+        .folio-text.lio {
+            margin-left: -1vw; /* Adjust for kerning */
+        }
+        .hero-image {
+            height: 15vw;
+            max-height: 50vh;
+            width: auto;
+            object-fit: cover;
+            border-radius: 0px;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: zoomIn 1s forwards;
+            animation-delay: 1s;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="hero-text-container">
+            <h1 class="port-text">Port</h1>
+            <div class="folio-text-container">
+                <span class="folio-text f">F</span>
+                <img src="images/HERO.jpg" alt="Hero Image" class="hero-image">
+                <span class="folio-text lio">LIO</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
