@@ -857,9 +857,9 @@ button[type="submit"]:hover {
 .success-message {
     padding: 10px;
     margin-top: 10px;
-    background-color: #00ff3c;
+    background-color: #58ea7a;
     color: #ffffff;
-    border: 1px solid #00ff3c;
+    border: 1px solid #58ea7a;
     border-radius: 5px;
     font-size: 14px;
     text-align: center;
