@@ -250,7 +250,7 @@
         const submitButton = form.querySelector("button[type='submit']");
         const successMessage = document.createElement("div");
         successMessage.classList.add("success-message");
-        successMessage.textContent = "✅ Your message has been sent!";
+        successMessage.textContent = " Your message has been sent!";
         form.appendChild(successMessage);
 
         submitButton.disabled = true;
@@ -272,7 +272,7 @@
             }
         })
         .catch(error => {
-            successMessage.textContent = "❌ There was an error. Please try again.";
+            successMessage.textContent = " There was an error. Please try again.";
             successMessage.style.backgroundColor = "#f8d7da";
             successMessage.style.color = "#721c24";
             setTimeout(() => {
