@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         navAnchors.forEach(a => {
             a.classList.remove('active');
-            // The hero section's conceptual link is 'About'
+            // The hero section's conceptual link is 'Home'
             const linkTarget = a.getAttribute('href');
-            if ( (linkTarget === '#about' && currentSectionId === 'home') || (linkTarget === '#' + currentSectionId) ) {
+            if ( (linkTarget === '#home' && currentSectionId === 'home') || (linkTarget === '#' + currentSectionId) ) {
                  a.classList.add('active');
             }
         });
