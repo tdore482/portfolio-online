@@ -100,3 +100,121 @@ function closeModal() {
 }
 
 
+// ============================
+// HERO SLIDER FUNCTIONALITY
+// ============================
+const slides = document.querySelectorAll('.hero-slider-container .slide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const currentSlideSpan = document.getElementById('currentSlide');
+const totalSlidesSpan = document.getElementById('totalSlides');
+
+let currentSlide = 0;
+const totalSlides = slides.length;
+
+// Set total slides count
+totalSlidesSpan.textContent = totalSlides;
+
+// Show specific slide
+function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[n].classList.add('active');
+    currentSlideSpan.textContent = n + 1;
+}
+
+// Next slide
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Previous slide
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Event listeners
+if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+// Auto-advance slides every 5 seconds
+setInterval(nextSlide, 5000);
+
+// ============================
+// SCROLL REVEAL FOR SECTIONS
+// ============================
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+// Observe sections
+const sections = document.querySelectorAll('.web-projects, .mobile-projects, .about-section, .contact-section');
+sections.forEach(section => observer.observe(section));
+
+// ============================
+// BACK TO TOP BUTTON
+// ============================
+const backToTopBtn = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ============================
+// MOBILE MENU TOGGLE
+// ============================
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+}
+
+// Close menu when a link is clicked
+if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    });
+}
+
+// ============================
+// SMOOTH SCROLL FOR NAV LINKS
+// ============================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});

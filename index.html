@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theodore Michongwe Portfolio</title>
-    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -12,6 +12,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <!--Web Clip Code-->
+    <!-- ✅ Webclip (Apple) -->
+  <link rel="apple-touch-icon" href="webclip.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="webclip.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="webclip.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="webclip.png">
+
+  <!-- ✅ Enable standalone (app-like) mode on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My Web App">
+
+  <!-- ✅ Favicon for desktop browsers -->
+  <link rel="icon" type="image/png" href="webclip.png">
+
+  <!-- ✅ Android / PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- ✅ Theme & Background Colors -->
+  <meta name="theme-color" content="#000000">
+  <meta name="background-color" content="#000000">
+
+  <!-- ✅ Description & SEO -->
+  <meta name="description" content="A sleek web app you can install on your home screen.">
 </head>
 <body>
     <header>
@@ -29,95 +54,105 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <div class="hero-text-container">
-                <h1 class="port-text">Port</h1>
-                <div class="folio-text-container">
-                    <span class="folio-text f">F  </span>
-                    <img src="images/HERO1.jpg" alt="Hero Image" class="hero-image">
-                    <span class="folio-text lio">  LI</span><img src="images/O.png" alt="Hero Image" class="hero-image">
-                </div>
-            </div>
-            <div class="scroll-down">
-                <a href="#work" aria-label="Scroll to work section"><i class="fas fa-arrow-down"></i></a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text-container">
+            <!--<div class="hero-logo">DRIFTTIME</div>-->
+            <h1 class="folio-text">An  impact  first <br>creative  designer.</h1>
+            <p class="hero-subtext">
+                We empower progressive brands to create lasting impact through strategic innovation and digital transformation.
+            </p>
+        </div>
 
-        <section id="slider" class="portfolio-slider">
-             <div class="slider-container">
-                <div class="slide">
-                    <img src="images/WAMC.jpg" alt="Web Design">
-                    <div class="slide-caption">Web Design</div>
+        <!-- Image Slider -->
+        <div class="hero-slider-container">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <img src="slider/image1.jpg" alt="Slide 1">
                 </div>
                 <div class="slide">
-                    <img src="images/MAMC.jpg" alt="Mobile App Designs">
-                     <div class="slide-caption">Mobile App Designs</div>
+                    <img src="slider/image2.jpg" alt="Slide 2">
                 </div>
                 <div class="slide">
-                    <img src="images/WFMC.jpg" alt="Prototypes & Wireframes">
-                     <div class="slide-caption">Prototypes & Wireframes</div>
+                    <img src="slider/image3.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="slider/image4.jpg" alt="Slide 4">
                 </div>
 
+                <!-- Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">←</button>
+                    <span class="slider-counter"><span id="currentSlide">1</span> / <span id="totalSlides">4</span></span>
+                    <button class="slider-btn" id="nextBtn">→</button>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+
+
+
 
         <section id="work" class="web-projects">
             <h2>PROJECTS</h2>
             <div class="project-card yellow">
+                <div class="project-preview">
+                    <img src="images/KCH.png" alt="Krisna Cuabo Project">
+                </div>
                 <div class="project-info">
                     <h3>Portfolio Krisna Cuabo</h3>
                     <p>Personal Portfolio, Consultant, Business</p>
                     <a href="krisna-cuabo.html" class="view-project">View Project</a>
                 </div>
-                <div class="project-preview">
-                    <img src="images/KCH.png" alt="Krisna Cuabo Project">
-                </div>
             </div>
             <div class="project-card red">
+                <div class="project-preview">
+                    <img src="images/OBH.png" alt="Oasis Brands Project">
+                </div>
                 <div class="project-info">
                     <h3>Oasis Brands</h3>
                     <p>Branding and Digital Solutions Agency</p>
                     <a href="oasis-brands.html" class="view-project">View Project</a>
                 </div>
-                <div class="project-preview">
-                    <img src="images/OBH.png" alt="Oasis Brands Project">
-                </div>
             </div>
              <div class="project-card blue">
+                <div class="project-preview">
+                    <img src="images/CCH1.png" alt="Celestial Craft Project">
+                </div>
                 <div class="project-info">
                     <h3>Celestial Craft</h3>
                     <p>Branding, Advertising and Web Solutions agency.</p>
                     <a href="celestial-craft.html" class="view-project">View Project</a>
                 </div>
-                <div class="project-preview">
-                    <img src="images/CCH.png" alt="Celestial Craft Project">
-                </div>
             </div>
             <div class="project-card green">
+                <div class="project-preview">
+                    <img src="images/PCH.png" alt="Patient Care Project">
+                </div>
                 <div class="project-info">
                     <h3>Patient Care</h3>
                     <p>Healthcare platform for patient coordination and admin support.</p>
                     <a href="patient-care.html" class="view-project">View Project</a>
                 </div>
-                <div class="project-preview">
-                    <img src="images/PCH.png" alt="Patient Care Project">
-                </div>
-            </div>
-        </section>
 
-        <section class="mobile-projects">
-            <h2>MOBILE PROJECTS</h2>
-            <div class="project-card green">
+            </div>
+            <!-- <div class="project-card purple">
+                <div class="project-preview">
+                    <img src="images/PCH2.png" alt="Patient Care Mobile Project">
+                </div>
                 <div class="project-info">
-                    <h3>Patient Care</h3>
+                    <h3>Patient Care Mobile</h3>
                     <p>Healthcare platform mobile app for patient coordination and admin support.</p>
                     <a href="#" class="view-project">View Project</a>
                 </div>
-                <div class="project-preview">
-                    <img src="images/MAPC.png" alt="Patient Care Mobile Project">
-                </div>
-            </div>
+            </div> -->
         </section>
+
+        <!--<section class="mobile-projects">
+            <h2>MOBILE PROJECTS</h2>
+
+        </section> -->
         <br><br>
         <section id="about" class="about-section">
         <div class="about-container">
@@ -282,6 +317,19 @@
         });
     });
     </script>
+<script>
+  const slides = document.querySelectorAll('.hero-slider .slide');
+  let current = 0;
+
+  function changeSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(changeSlide, 4000); // Change every 4 seconds
+</script>
+
 
     
 
