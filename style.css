@@ -112,7 +112,7 @@ nav {
 }
 
 .folio-text {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 900;
     line-height: 0.95;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ nav {
     margin-bottom: 40px;
     opacity: 0;
     animation: slideIn 0.8s ease 0.4s forwards;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
     max-width: 100%;
     width: 100%;
 }
