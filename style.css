@@ -1019,126 +1019,73 @@ h2 {
 }
 
 /* ============================
-   ENHANCED SLIDER CONTROLS
+   SLIDER CONTROLS - HIDDEN
 ============================ */
 
 .slider-controls {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(15px);
-    padding: 12px 24px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    display: none;
 }
 
 .slider-controls:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Navigation Buttons */
 .slider-btn {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
-    border: 1.5px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(238, 205, 92, 0.15);
+    border-color: rgba(238, 205, 92, 0.4);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.slider-btn:active {
+    transform: scale(0.92);
 }
 
 .slider-btn:focus {
     outline: none;
 }
 
-.slider-btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(238, 205, 92, 0.3) 0%, rgba(238, 205, 92, 0) 100%);
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.slider-btn:hover {
-    background: linear-gradient(135deg, rgba(238, 205, 92, 0.25) 0%, rgba(238, 205, 92, 0.1) 100%);
-    border-color: rgba(238, 205, 92, 0.6);
-    box-shadow: 0 0 20px rgba(238, 205, 92, 0.3), inset 0 0 20px rgba(238, 205, 92, 0.1);
-    transform: scale(1.08);
-}
-
-.slider-btn:hover::before {
-    opacity: 1;
-}
-
-.slider-btn:active {
-    transform: scale(0.95);
-}
-
 /* Slide Counter */
 .slider-counter {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 600;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 0 8px;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 1.4;
+    padding: 4px 0;
 }
 
 #currentSlide {
-    color: #EECD5C;
-    font-weight: 700;
-    font-size: 14px;
+    color: rgba(238, 205, 92, 0.8);
+    font-weight: 600;
+    font-size: 12px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .slider-controls {
-        bottom: 15px;
-        padding: 10px 18px;
-        gap: 15px;
-        border-radius: 40px;
-    }
-
-    .slider-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .slider-counter {
-        font-size: 12px;
-        padding: 0 6px;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider-controls {
-        bottom: 12px;
-        padding: 8px 14px;
+        right: 15px;
+        top: 50%;
+        padding: 12px 10px;
         gap: 12px;
     }
 
@@ -1149,11 +1096,29 @@ h2 {
     }
 
     .slider-counter {
-        font-size: 11px;
-        padding: 0 4px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-controls {
+        right: 12px;
+        top: 50%;
+        padding: 10px 8px;
+        gap: 10px;
+    }
+
+    .slider-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .slider-counter {
+        font-size: 9px;
     }
 
     #currentSlide {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
