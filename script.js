@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================
-    // SMOOTH SCROLL FOR NAV LINKS
+    // SMOOTH SCROLL FOR HASH LINKS ONLY
     // ============================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (nextBtn) nextBtn.addEventListener('click', nextSlide);
     if (prevBtn) prevBtn.addEventListener('click', prevSlide);
 
-    // Auto-advance slides every 5 seconds
     if (slides.length > 0) {
         setInterval(nextSlide, 5000);
     }
@@ -178,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================
-// MODAL FUNCTIONS (outside DOMContentLoaded)
+// MODAL FUNCTIONS
 // ============================
 function openModal(img) {
     const modal = document.getElementById("imgModal");

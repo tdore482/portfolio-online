@@ -1123,3 +1123,26 @@ h2 {
     }
 }
 
+/* Override mobile menu blocking issue */
+@media (max-width: 768px) {
+    nav {
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .menu-toggle {
+        pointer-events: auto;
+        z-index: 1100;
+    }
+
+    .nav-links.show {
+        pointer-events: auto;
+        z-index: 999;
+    }
+
+    .nav-links:not(.show) {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+}
