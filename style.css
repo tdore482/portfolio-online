@@ -1122,3 +1122,230 @@ h2 {
         font-size: 10px;
     }
 }
+
+/* ============================
+   WEB & MOBILE PROJECTS - MOBILE FIX
+============================ */
+
+.web-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 4rem 5%;
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
+}
+
+.web-projects.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+.project-preview {
+    width: 100%;
+    height: auto;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card.yellow {
+    background-color: var(--accent-yellow);
+    color: #000;
+}
+
+.project-card.red {
+    background-color: var(--accent-red);
+}
+
+.project-card.blue {
+    background-color: var(--accent-blue);
+}
+
+.project-card.green {
+    background-color: var(--accent-green);
+}
+
+.project-card.purple {
+    background-color: var(--accent-purple);
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-info p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.view-project {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9rem;
+}
+
+.view-project:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.project-card.yellow .view-project {
+    border-color: #000;
+    color: #000;
+}
+
+.project-card.yellow .view-project:hover {
+    background-color: #000;
+    color: var(--accent-yellow);
+}
+
+/* ============================
+   RESPONSIVE - TABLET
+============================ */
+
+@media (max-width: 1200px) {
+    .web-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 3rem 5%;
+    }
+
+    .folio-text {
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .web-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 3rem 5%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* ============================
+   RESPONSIVE - MOBILE
+============================ */
+
+@media (max-width: 768px) {
+    .web-projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 4%;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-preview img {
+        height: 250px;
+    }
+
+    .project-info {
+        padding: 1.5rem;
+    }
+
+    .project-info h3 {
+        font-size: 1rem;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+    }
+
+    .view-project {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .web-projects {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 2rem 3%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-preview img {
+        height: 200px;
+    }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    .project-info h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .project-info p {
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .view-project {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
