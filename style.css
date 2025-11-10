@@ -9,6 +9,8 @@
     --accent-blue: #04b6cb;
     --accent-green: #5dd18a;
     --accent-purple: #a91cb4;
+    --accent-green-dark: #3ea76d;
+    --accent-turquoise: #40e0d0;
 }
 
 * {
@@ -265,6 +267,10 @@ h2 {
 .project-card.yellow {
     background-color: var(--accent-yellow);
     color: #000;
+}
+
+.project-card.dark-green {
+    background-color: var(--accent-green-dark);
 }
 
 .project-card.red {
