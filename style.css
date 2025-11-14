@@ -1237,3 +1237,7 @@ h2 {
     }
 }
 
+.process-step ul {
+    padding-left: 40px; /* Increased from 20px to add more indentation */
+    list-style: disc;
+}
