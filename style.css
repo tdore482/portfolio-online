@@ -336,16 +336,13 @@ h2 {
 ============================ */
 .about-section {
     padding: 60px 20px;
-    opacity: 0;
-    transform: translateY(50px);
-    filter: blur(10px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
+    /* Animation properties are removed from the main container 
+      and applied to the children elements for a staggered effect.
+    */
 }
 
 .about-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+     /* This class now acts only as a trigger for the children animations */
 }
 
 .about-container {
@@ -356,6 +353,7 @@ h2 {
     align-items: flex-start;
 }
 
+/* --- MODIFIED: About Left Column (with animation) --- */
 .about-left {
     flex: 1;
     position: sticky;
@@ -364,6 +362,20 @@ h2 {
     font-size: 1.25rem;
     color: #ffffff;
     line-height: 1.8;
+
+    /* Animation: Default (hidden) state */
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
+}
+
+.about-section.visible .about-left {
+    /* Animation: Visible state */
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition-delay: 0.1s; /* Slight delay to load after section appears */
 }
 
 .about-left h2 {
@@ -394,49 +406,121 @@ h2 {
     line-height: 1.9;
 }
 
+/* --- MODIFIED: About Right Heading (with animation) --- */
 .about-right h3 {
     font-size: 19px;
     margin-bottom: 30px;
     text-transform: uppercase;
+
+    /* Animation: Default (hidden) state */
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+.about-section.visible .about-right h3 {
+    /* Animation: Visible state */
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s; /* Stagger after left column */
+}
+
+/* --- MODIFIED: Process Step Base (Animation + Reset Background) --- */
 .process-step {
-    background: #111;
+     /* REMOVED: The specific background-image is removed from here
+      and is now applied to each step individually below.
+     */
+    
+    background-size: cover;
+    background-position: center;
     padding: 20px 25px;
     border-radius: 0px;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.05);
     margin-bottom: 1.5rem;
+
+    /* Animation: Default (hidden) state */
+    opacity: 0;
+    transform: translateX(100px); /* Slides in from the right */
+    filter: blur(5px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, filter 0.6s ease-out;
 }
 
+/* --- NEW: Animate steps to visible state --- */
+.about-section.visible .process-step {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+/* --- NEW: Individual Backgrounds & Animation Delays --- */
+
+/* Step 1: Discovery & Research */
+.process-step:nth-of-type(1) {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(process-steps/1.jpg); /* <-- UPDATE THIS IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+}
+.about-section.visible .process-step:nth-of-type(1) {
+    transition-delay: 0.3s; /* Staggered delay */
+}
+
+/* Step 2: Wireframing & Sketching */
+.process-step:nth-of-type(2) {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(process-steps/3.jpg); /* <-- UPDATE THIS IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+}
+.about-section.visible .process-step:nth-of-type(2) {
+    transition-delay: 0.4s; /* Staggered delay */
+}
+
+/* Step 3: UI Design & Prototyping */
+.process-step:nth-of-type(3) {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(process-steps/UI.jpg); /* <-- UPDATE THIS IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+}
+.about-section.visible .process-step:nth-of-type(3) {
+    transition-delay: 0.5s; /* Staggered delay */
+}
+
+/* Step 4: User Testing & Validation */
+.process-step:nth-of-type(4) {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(process-steps/4.jpg); /* <-- UPDATE THIS IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+}
+.about-section.visible .process-step:nth-of-type(4) {
+    transition-delay: 0.6s; /* Staggered delay */
+}
+
+/* Step 5: Handoff & Development Support */
+.process-step:nth-of-type(5) {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(process-steps/HO.jpg); /* <-- UPDATE THIS IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+}
+.about-section.visible .process-step:nth-of-type(5) {
+    transition-delay: 0.7s; /* Staggered delay */
+}
+
+/* (Keep the rest of your .process-step styles as they were) */
 .process-step h4 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #fff;
 }
-
-.process-step .quote {
-    font-style: italic;
-    color: #aaa;
-    margin-bottom: 10px;
-}
-
-.process-step p {
-    font-size: 14px;
-    color: #ccc;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.process-step ul {
-    padding-left: 20px;
-    list-style: disc;
-}
-
-.process-step li {
-    color: #bbb;
-    font-size: 14px;
-    line-height: 1.5;
-}
+/* ... etc. ... */
 
 /* ============================
    CONTACT SECTION
