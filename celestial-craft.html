@@ -3,111 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial Craft Project</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Celestial Craft | Digital Experience</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="logo">WTM.</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#work" class="nav-item">Work</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="index.html#contact" class="nav-item">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main class="project-detail">
-        <section class="project-hero">
-            <img src="images/CCH.png" alt="Celestial Craft Hero">
-            <h1>Celestial Crafts Landing Page – Elevating Digital Experiences</h1>
-        </section>
-
-        <section class="project-intro">
-            <div>
-                <h3>CLIENT</h3>
-                <p>Celestial Craft</p>
+    <main class="case-study-main">
+        <section class="case-hero">
+            <div class="case-hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">Elevating</span>
+                    <span class="reveal-text" style="color: #00A3E0;">Digital Experiences.</span>
+                </h1>
+                <div class="case-meta fade-in-up">
+                    <div class="meta-item">
+                        <span>Client</span>
+                        <p>Celestial Craft</p>
+                    </div>
+                    <div class="meta-item">
+                        <span>Type</span>
+                        <p>Web Design</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>PROJECT TYPE</h3>
-                <p>Web Design</p>
-            </div>
-            <div class="project-description">
-                <p>This case study analyzes the UI/UX design of Celestial Crafts' landing page, focusing on layout, typography, color scheme, usability, and accessibility to create a strong digital presence.</p>
-            </div>
-        </section>
-
-        <section class="project-gallery">
-            <img src="images/CelestialCraft/CC1.png" alt="Celestial Craft Image 1" class="project-img" onclick="openModal(this)">
-            <img src="images/CelestialCraft/CC2.png" alt="Celestial Craft Image 2" class="project-img" onclick="openModal(this)">
-            <img src="images/CelestialCraft/CC7.png" alt="Celestial Craft Image 3" class="project-img" onclick="openModal(this)">
-            <img src="images/CelestialCraft/CC6.png" alt="Celestial Craft Image 5" class="project-img" onclick="openModal(this)">
-            <img src="images/CelestialCraft/CC9.png" alt="Celestial Craft Image 4" class="project-img" onclick="openModal(this)">
-        </section>
-
-        <section class="project-features">
-            <div class="feature-column">
-                <h3>Visual Design</h3>
-                <ul>
-                    <li><strong>Hero Section:</strong> Bold uppercase headline, vibrant blue background for strong first impression.</li>
-                    <li><strong>Typography:</strong> Bold sans-serif for headings, clear hierarchy for readability.</li>
-                    <li><strong>Color Scheme:</strong> Primary vibrant blue (#00A3E0), black & white accents for contrast.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Navigation & Layout</h3>
-                <ul>
-                    <li><strong>About Section:</strong> Split layout for visual balance between imagery and text.</li>
-                    <li><strong>Services Section:</strong> Card-based design for easy scanning.</li>
-                    <li><strong>Footer:</strong> Minimalist, uncluttered, essential contact info only.</li>
-                </ul>
-            </div>
-             <div class="feature-column">
-                <h3>Core Features</h3>
-                <ul>
-                    <li><strong>CTA Placement:</strong> Strategically positioned for conversions.</li>
-                    <li><strong>Usability Enhancements:</strong> Visual hierarchy prevents fatigue.</li>
-                    <li><strong>Accessibility:</strong> High text-to-background contrast & intuitive visuals.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Outcome & Impact</h3>
-                <ul>
-                    <li>Created a bold, engaging brand identity for Celestial Craft.</li>
-                    <li>Improved user comprehension and interaction via clear layouts.</li>
-                    <li>Established trust and credibility through a professional design approach.</li>
-                </ul>
+            <div class="case-hero-img-container">
+                <img src="images/CCH.png" alt="Celestial Craft Hero">
             </div>
         </section>
 
-        <div class="back-to-work">
-            <a href="index.html#work">Back to My Work</a>
+        <section class="case-intro">
+            <div class="intro-grid">
+                <div class="intro-title reveal-scroll">
+                    <h2>Overview</h2>
+                </div>
+                <div class="intro-text reveal-scroll">
+                    <p class="highlight-p">Analyzing and redesigning the UI/UX of Celestial Crafts' landing page.</p>
+                    <p>We focused on layout, typography, color scheme, usability, and accessibility to create a strong digital presence that commands attention.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-gallery">
+            <h2 class="section-title reveal-scroll" style="margin-bottom: 3rem;">Visual Identity</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item span-2 reveal-scroll">
+                    <img src="images/CelestialCraft/CC1.png" alt="Landing Header" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/CelestialCraft/CC2.png" alt="Service Cards" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/CelestialCraft/CC7.png" alt="Detail View" class="zoom-trigger">
+                </div>
+                <div class="gallery-item span-full reveal-scroll">
+                    <img src="images/CelestialCraft/CC6.png" alt="Full Layout" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/CelestialCraft/CC9.png" alt="Mobile Adaption" class="zoom-trigger">
+                </div>
+            </div>
+        </section>
+
+        <section class="case-features">
+            <div class="feature-grid">
+                <div class="feature-card reveal-scroll">
+                    <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Visual Design</h3>
+                    <p>Bold uppercase headlines and a vibrant blue background (#00A3E0) create a strong first impression, supported by high-contrast black & white accents.</p>
+                </div>
+                <div class="feature-card reveal-scroll">
+                    <div class="icon-box"><i class="fas fa-compass"></i></div>
+                    <h3>Layout</h3>
+                    <p>Split layout in the 'About' section balances imagery and text. Card-based designs in 'Services' allow for easy content scanning.</p>
+                </div>
+                <div class="feature-card reveal-scroll">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>Impact</h3>
+                    <p>Created a bold brand identity, improving user comprehension and interaction via clear layouts and establishing professional trust.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="next-project-container">
+            <a href="index.html#work" class="btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to My Work
+            </a>
         </div>
     </main>
 
     <footer class="main-footer">
         <div class="footer-content">
-            <p><strong>Wilford Theodore Michongwe</strong></p><br>
-            <p><strong>theodoremichongwe@gmail.com</strong></p><br>
-            <p><strong>Blantyre, Malawi</strong></p>
-            <div class="social-links">
-                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <div class="footer-left">
+                <strong>Wilford Theodore Michongwe</strong>
+                <span>Blantyre, Malawi</span>
             </div>
         </div>
     </footer>
-    <div id="imgModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".zoom-trigger");
+        const closeBtn = document.querySelector(".close-modal");
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        function closeModal() { modal.classList.remove('show'); document.body.style.overflow = 'auto'; }
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    </script>
 </body>
 </html>

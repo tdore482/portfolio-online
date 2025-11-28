@@ -3,107 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krisna Cuabo Project</title>
+    <title>Oasis Brands | Theodore Michongwe</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="logo">WTM.</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#work" class="nav-item">Work</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="index.html#contact" class="nav-item">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main class="project-detail">
-        <section class="project-hero">
-            <img src="images/OasisBrands/OHSI.png" alt="Oasis Brands Hero">
-            <h1>The Creative and Innovative Engine driving African digital disruption.</h1>
+    <main class="case-study-main">
+        
+        <section class="case-hero">
+            <div class="case-hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">The Creative Engine</span>
+                    <span class="reveal-text" style="color: var(--accent-yellow);">Driving Disruption.</span>
+                </h1>
+                <div class="case-meta fade-in-up">
+                    <div class="meta-item">
+                        <span>Client</span>
+                        <p>Oasis Brands</p>
+                    </div>
+                    <div class="meta-item">
+                        <span>Services</span>
+                        <p>Web Design & Strategy</p>
+                    </div>
+                    <div class="meta-item">
+                        <span>Year</span>
+                        <p>2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="case-hero-img-container parallax-container">
+                <img src="images/OasisBrands/OHSI.png" alt="Oasis Brands Hero" class="parallax-img">
+            </div>
         </section>
 
-        <section class="project-intro">
-             <div>
-                <h3>CLIENT</h3>
-                <p>Oasis Brands</p>
-            </div>
-            <div>
-                <h3>PROJECT TYPE</h3>
-                <p>Web Design</p>
-            </div>
-            <div class="project-description">
-                 <p>Design for Oasis Brands (UI/UX Design Process)</p>
-                <p>Oasis Brands is a forward-thinking company specializing in branding and design solutions. To enhance its digital presence, a strategic UI/UX approach was implemented to create an engaging and user-friendly experience. This case study explores the key design decisions made in crafting an immersive website for Oasis Brands.</p>
+        <section class="case-intro">
+            <div class="intro-grid">
+                <div class="intro-title reveal-scroll">
+                    <h2>The Challenge</h2>
+                </div>
+                <div class="intro-text reveal-scroll">
+                    <p class="highlight-p">Oasis Brands is a forward-thinking company specializing in branding and design solutions. To enhance its digital presence, we needed to build a strategic UI/UX approach.</p>
+                    <p>The goal was to move beyond a standard corporate portfolio and create an immersive digital experience that reflects their "Creative Engine" identity. We focused on cut-out imagery, bold typography, and a curated color palette to establish visual harmony.</p>
+                </div>
             </div>
         </section>
 
-        <section class="project-gallery">
-            <img src="images/OasisBrands/O1.png" alt="Oasis Brands Gallery Image 1">
-            <img src="images/OasisBrands/O2.png" alt="Oasis Brands Gallery Image 2">
-            <img src="images/OasisBrands/O3.png" alt="Oasis Brands Gallery Image 2">
-            <img src="images/OasisBrands/O4.png" alt="Oasis Brands Gallery Image 2">
-            <img src="images/OasisBrands/O5.png" alt="Oasis Brands Gallery Image 2">
+        <section class="case-gallery">
+            <h2 class="section-title reveal-scroll" style="margin-bottom: 3rem;">Visual Journey</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item span-2 reveal-scroll">
+                    <img src="images/OasisBrands/O1.png" alt="Oasis Design System" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/OasisBrands/O2.png" alt="Oasis Mobile View" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/OasisBrands/O3.png" alt="Oasis Typography" class="zoom-trigger">
+                </div>
+                 <div class="gallery-item span-2 reveal-scroll">
+                    <img src="images/OasisBrands/O4.png" alt="Oasis Interface" class="zoom-trigger">
+                </div>
+                <div class="gallery-item span-full reveal-scroll">
+                    <img src="images/OasisBrands/O5.png" alt="Oasis Full Layout" class="zoom-trigger">
+                </div>
+            </div>
         </section>
 
-        <section class="project-features">
-            <div class="feature-column">
-                <h3>Visual Design</h3>
-                <ul>
-                    <li><strong>Cut-Out Imagery & Logo-Type Elements:</strong> Used to reflect Oasis Brands' creativity and vision.</li> <br>
-                    <li><strong>Color Palette & Typography:</strong> A curated Oasis color scheme with strategic orange accents.</li> <br>
-                    <li><strong>Visual Harmony:</strong> Consistent style and typography reinforce brand identity.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Navigation & Layout</h3>
-                <ul>
-                    <li><strong>Progressive Disclosure:</strong> Animations in the "Our Services" section reveal content in stages.</li> <br>
-                    <li><strong>Hover Interactions:</strong> Strategically placed to create a guided journey.</li> <br>
-                    <li><strong>Structured Engagement:</strong> Each interaction encourages intuitive exploration.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Core Features</h3>
-                 <ul>
-                    <li><strong>Animated Service Reveal:</strong> Keeps users engaged while presenting complex information gradually.</li> <br>
-                    <li><strong>Interactive Hover Effects:</strong> Enhances user experience and interactivity.</li> <br>
-                    <li><strong>Brand-Focused Visual Integration:</strong> Imagery and logo-type designs consistently align with the brand's creative mission.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Outcome & Impact</h3>
-                 <ul>
-                    <li>Users experienced fluid, engaging storytelling without cognitive overload.</li> <br>
-                    <li>The design reinforced Oasis Brands' image as a visionary, creative leader.</li> <br>
-                    <li>Increased engagement and smoother content absorption through interactive features.</li>
-                </ul>
+        <section class="case-features">
+            <div class="feature-grid">
+                <div class="feature-card reveal-scroll">
+                    <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                    <h3>Visual Harmony</h3>
+                    <p>Utilizing cut-out imagery and logo-type elements to reflect creativity, anchored by a curated color scheme with strategic orange accents.</p>
+                </div>
+                <div class="feature-card reveal-scroll" style="transition-delay: 0.1s;">
+                    <div class="icon-box"><i class="fas fa-mouse-pointer"></i></div>
+                    <h3>Interactive Flow</h3>
+                    <p>Progressive disclosure animations and hover interactions create a guided journey, revealing content in stages to prevent cognitive overload.</p>
+                </div>
+                <div class="feature-card reveal-scroll" style="transition-delay: 0.2s;">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>The Outcome</h3>
+                    <p>Users experienced fluid, engaging storytelling. The design reinforced Oasis Brands' image as a visionary, creative leader.</p>
+                </div>
             </div>
         </section>
-         <div class="back-to-work">
-            <a href="index.html#work">Back to My Work</a>
+
+        <div class="next-project">
+            <p>Next Case Study</p>
+            <a href="index.html#work" class="next-link">Back to Work <i class="fas fa-arrow-right"></i></a>
         </div>
+
     </main>
 
-    <footer>
-       </footer>
-           <div id="imgModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-    </div>
-    <script src="script.js"></script>
-        <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('nav ul');
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <strong>Wilford Theodore Michongwe</strong>
+                <span>Blantyre, Malawi</span>
+            </div>
+            <div class="social-links">
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Specific inline script to initialize Modal just for this page
+        // (Or you can add this logic to your main script.js)
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".zoom-trigger");
+        const closeBtn = document.querySelector(".close-modal");
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        
+        // Close on background click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
         });
     </script>
 </body>

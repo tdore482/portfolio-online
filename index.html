@@ -3,352 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your old description here" />
-    <meta property="og:description" content="An impact first creative designer. Theodore crafts digital experiences that inspire, blending strategic design, sleek interfaces, and creative visuals." />
-    <title>Theodore Michongwe Portfolio</title>
+    <meta name="description" content="Impact first creative designer crafting digital experiences that inspire." />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Theodore Michongwe | Creative Designer</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     
-
     <link rel="stylesheet" href="style.css">
-
-    <!--Web Clip Code-->
-    <!-- ✅ Webclip (Apple) -->
-  <link rel="apple-touch-icon" href="webclip.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="webclip.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="webclip.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="webclip.png">
-
-  <!-- ✅ Enable standalone (app-like) mode on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="My Web App">
-
-  <!-- ✅ Favicon for desktop browsers -->
-  <link rel="icon" type="image/png" href="webclip.png">
-
-  <!-- ✅ Android / PWA Manifest -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- ✅ Theme & Background Colors -->
-  <meta name="theme-color" content="#000000">
-  <meta name="background-color" content="#000000">
-
-  <!-- ✅ Description & SEO -->
-  <meta name="description" content="A sleek web app you can install on your home screen.">
 </head>
 <body>
+
     <header>
         <nav>
+            <div class="logo">WTM.</div>
             <button class="menu-toggle" aria-label="Toggle navigation">
-                &#9776; 
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
             
             <div class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#work" class="nav-item">Work</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-text-container">
-            <!--<div class="hero-logo">DRIFTTIME</div>-->
-            <h1 class="folio-text">An  impact  first <br>creative  designer.</h1>
-            <p class="hero-subtext">
-                Theodore crafts digital experiences that inspire, blending strategic design, sleek interfaces, and creative visuals to help brands stand out and make a lasting impression.
-            </p>
-        </div>
-
-        <!-- Image Slider -->
-        <div class="hero-slider-container">
-            <div class="slider-wrapper">
-                <div class="slide active">
-                    <img src="slider/image1.jpg" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="slider/imageZ.png" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="slider/imageK.png" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="slider/image4.jpg" alt="Slide 4">
-                </div>
-
-                <!-- Controls -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">An Impact First</span>
+                    <span class="reveal-text">Creative Designer.</span>
+                </h1>
+                <p class="hero-subtext">
+                    Theodore crafts digital experiences that inspire, blending strategic design, sleek interfaces, and creative visuals.
+                </p>
+            </div>
+            
+            <div class="hero-visual">
+                <img src="slider/image1.jpg" alt="Hero Visual" class="hero-slide active">
+                <img src="slider/image4.jpg" alt="Hero Visual" class="hero-slide">
+                <img src="slider/imageK.png" alt="Hero Visual" class="hero-slide">
+                <img src="slider/imageO.png" alt="Hero Visual" class="hero-slide">
+                
+                <!-- Slider Controls from Set 1 -->
                 <div class="slider-controls">
                     <button class="slider-btn" id="prevBtn">←</button>
                     <span class="slider-counter"><span id="currentSlide">1</span> / <span id="totalSlides">4</span></span>
                     <button class="slider-btn" id="nextBtn">→</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-
-
-
-        <section id="work" class="web-projects">
-            <h2>PROJECTS</h2>
-            <div class="project-card dark-green">
-                <div class="project-preview">
-                    <img src="images/NEF/NEF1.png" alt="North East Foods Project">
-                </div>
-                
-                <div class="project-info">
-                    <h3>North East Foods Limited</h3>
-                    <p>Website, Farming, Business</p>
-                    <a href="north-east-foods.html" class="view-project">View Project</a>
-                </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="line"></div>
             </div>
-            <div class="project-card yellow">
-                <div class="project-preview">
-                    <img src="images/KCH.png" alt="Krisna Cuabo Project">
-                </div>
-                
-                <div class="project-info">
-                    <h3>Portfolio Krisna Cuabo</h3>
-                    <p>Personal Portfolio, Consultant, Business</p>
-                    <a href="krisna-cuabo.html" class="view-project">View Project</a>
-                </div>
-            </div>
-            <div class="project-card red">
-                <div class="project-preview">
-                    <img src="images/OBH.png" alt="Oasis Brands Project">
-                </div>
-                <div class="project-info">
-                    <h3>Oasis Brands</h3>
-                    <p>Branding and Digital Solutions Agency</p>
-                    <a href="oasis-brands.html" class="view-project">View Project</a>
-                </div>
-            </div>
-             <div class="project-card blue">
-                <div class="project-preview">
-                    <img src="images/CCH1.png" alt="Celestial Craft Project">
-                </div>
-                <div class="project-info">
-                    <h3>Celestial Craft</h3>
-                    <p>Branding, Advertising and Web Solutions agency.</p>
-                    <a href="celestial-craft.html" class="view-project">View Project</a>
-                </div>
-            </div>
-            <div class="project-card green">
-                <div class="project-preview">
-                    <img src="images/PCH.png" alt="Patient Care Project">
-                </div>
-                <div class="project-info">
-                    <h3>Patient Care</h3>
-                    <p>Healthcare platform for patient coordination and admin support.</p>
-                    <a href="patient-care.html" class="view-project">View Project</a>
-                </div>
-
-            </div>
-            <!-- <div class="project-card purple">
-                <div class="project-preview">
-                    <img src="images/PCH2.png" alt="Patient Care Mobile Project">
-                </div>
-                <div class="project-info">
-                    <h3>Patient Care Mobile</h3>
-                    <p>Healthcare platform mobile app for patient coordination and admin support.</p>
-                    <a href="#" class="view-project">View Project</a>
-                </div>
-            </div> -->
         </section>
 
-        <!--<section class="mobile-projects">
-            <h2>MOBILE PROJECTS</h2>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>UI/UX Design</span> • <span>Frontend Dev</span> • <span>Prototyping</span> • <span>Strategy</span> • <span>Branding</span> • 
+                <span>UI/UX Design</span> • <span>Frontend Dev</span> • <span>Prototyping</span> • <span>Strategy</span> • <span>Branding</span> •
+            </div>
+        </div>
 
-        </section> -->
-        <br><br>
+        <section id="work" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-subtitle">A collection of projects tailored to client needs.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-color="#EECD5C">
+                    <div class="card-image">
+                        <img src="projects/NEF.png" alt="North East Foods">
+                        <div class="card-overlay">
+                            <a href="north-east-foods.html" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>North East Foods</h3>
+                        <p>Web / Branding</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-color="#FF4136">
+                    <div class="card-image">
+                        <img src="projects/KC.png" alt="Krisna Portfolio">
+                        <div class="card-overlay">
+                            <a href="krisna-cuabo.html" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Krisna Cuabo</h3>
+                        <p>Portfolio / Dev</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-color="#04b6cb">
+                    <div class="card-image">
+                        <img src="projects/OS.png" alt="Oasis Brands">
+                        <div class="card-overlay">
+                            <a href="oasis-brands.html" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Oasis Brands</h3>
+                        <p>Agency / Digital</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-color="#5dd18a">
+                    <div class="card-image">
+                        <img src="projects/PC.png" alt="Patient Care">
+                        <div class="card-overlay">
+                            <a href="patient-care.html" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Patient Care</h3>
+                        <p>Healthcare / App</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-color="#5dd18a">
+                    <div class="card-image">
+                        <img src="projects/CC.png" alt="Celestial Craft">
+                        <div class="card-overlay">
+                            <a href="celestial-craft.html" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Patient Care</h3>
+                        <p>Healthcare / App</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <section id="about" class="about-section">
-        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-text-wrapper">
+                    <h2 class="section-title">Methodology</h2>
+                    <p class="lead-text">
+                        I specialize in crafting intuitive, engaging, and accessible digital experiences that bridge the gap between users and technology.
+                    </p>
+                </div>
 
-            <!-- Left Side - About Description -->
-            <div class="about-left">
-                
-            <h2>ABOUT</h2>
-            <p>
-                As a passionate UI/UX Designer, I specialize in crafting intuitive, engaging, and accessible digital experiences that bridge the gap between users and technology.
-                With a background in human-computer interaction, frontend development, and information systems analysis, I blend creativity with functionality to design seamless user journeys.
-            </p>
-             <img src="images/About1.jpg" alt="About Image" class="about-image">
+                <div class="process-list">
+                    <div class="process-item">
+                        <span class="process-number">01</span>
+                        <div class="process-detail">
+                            <h4>Discovery</h4>
+                            <p>Understanding goals, users, and problems through deep research.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <span class="process-number">02</span>
+                        <div class="process-detail">
+                            <h4>Wireframing</h4>
+                            <p>Low-fidelity sketches to establish structure and user flow.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <span class="process-number">03</span>
+                        <div class="process-detail">
+                            <h4>Design</h4>
+                            <p>High-fidelity UI mockups, typography, and interactive prototypes.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <span class="process-number">04</span>
+                        <div class="process-detail">
+                            <h4>Development</h4>
+                            <p>Pixel-perfect implementation and handoff support.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Right Side - Design Process -->
-            <div class="about-right">
-                <br><br>
-            <h3>MY DESIGN PROCESS</h3>
-
-            <!-- Step 1 -->
-            <div class="process-step">
-                <h4><!--<i class="fas fa-brain"></i>--> Discovery & Research</h4>
-                <p class="quote">Every successful project starts with clarity.</p><br>
-                <p>
-                I begin by understanding your goals, users, and the problem we’re solving. This includes reviewing your brand, audience, competitors, and market trends to shape a strategic foundation.
-                </p>
-            </div>
-            <br>
-            <!-- Step 2 -->
-            <div class="process-step">
-                <h4><!--<i class="fas fa-pencil-alt"></i>--> Wireframing & Sketching</h4>
-                <p class="quote">Structure before style.</p>
-                <p>
-                I sketch low-fidelity wireframes to plan layouts, functionality, and key interactions. This rapid ideation phase allows for fast feedback and iteration.
-                </p>
-                <ul>
-                <li>Wireframes (low-fidelity)</li>
-                <li>Screen layout sketches</li>
-                <li>UX flow diagrams</li>
-                </ul>
-            </div>
-            <br>
-            <!-- Step 3 -->
-            <div class="process-step">
-                <h4><!--<i class="fas fa-palette"></i>--> UI Design & Prototyping</h4>
-                <p class="quote">Crafting beautiful, usable interfaces.</p>
-                <p>
-                Once structure is solid, I apply visual design principles colors, typography, spacing, and branding to build engaging high-fidelity mockups and interactive prototypes.
-                </p>
-                <ul>
-                <li>Pixel-perfect UI mockups</li>
-                <li>Clickable prototypes</li>
-                <li>Design systems or style guides</li>
-                </ul>
-            </div>
-            <br>
-            <!-- Step 4 -->
-            <div class="process-step">
-                <h4><!--<i class="fas fa-vials">--></i> User Testing & Validation</h4>
-                <p class="quote">Design backed by real feedback.</p>
-                <p>
-                I test the prototype with real users or stakeholders, gathering insights on usability and user experience. Then I refine the design to align with what truly works.
-                </p>
-                <ul>
-                <li>Usability testing</li>
-                <li>Iteration based on feedback</li>
-                <li>Updated prototypes</li>
-                </ul>
-            </div>
-            <br>
-            <!-- Step 5 -->
-            <div class="process-step">
-                <h4><!--<i class="fas fa-laptop-code"></i>--> Handoff & Development Support</h4>
-                <p class="quote">Making sure the design works in code.</p>
-                <p>
-                I package design assets and specifications for developers and collaborate during the build to maintain quality and alignment.
-                </p>
-                <ul>
-                <li>Exported assets & icons</li>
-                <li>Handoff files via Figma or Zeplin</li>
-                <li>Dev support for pixel-perfect implementation</li>
-                </ul>
-            </div>
-
-            </div>
-        </div>
         </section>
 
+        <section id="about-bio" class="about-section-bio">
+            <div class="about-bio-container">
+                <img src="images/About1.jpg" alt="About Image" class="about-image">
+                <p>
+                    As a passionate UI/UX Designer, I specialize in crafting intuitive, engaging, and accessible digital experiences that bridge the gap between users and technology.
+                    With a background in human-computer interaction, frontend development, and information systems analysis, I blend creativity with functionality to design seamless user journeys.
+                </p>
+            </div>
+        </section>
 
         <section id="contact" class="contact-section">
-            <br><br>
-            <h2>Let's talk</h2>
-            <p>Have a project in mind or need a UI/UX revamp? Let's create seamless and engaging experiences together. Get in touch today!</p>
-            <form id="contact-form" action="https://formspree.io/f/movlywgj" method="POST">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <input type="email" id="email" name="_replyto" placeholder="Email Address" required>
-                </div>
-                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-
+            <div class="contact-container">
+                <h2 class="section-title">Let's Create.</h2>
+                <p>Have a project in mind? Get in touch.</p>
+                
+                <form id="contact-form" action="https://formspree.io/f/movlywgj" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="_replyto" required>
+                        <label>Email Address</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Message</label>
+                        <span class="line"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer class="main-footer">
         <div class="footer-content">
-            <p><strong>Wilford Theodore Michongwe</strong></p> <br>
-            <p><strong>theodoremichongwe@gmail.com</strong></p> <br>
-            <p><strong>Blantyre, Malawi</strong></p>
+            <div class="footer-left">
+                <strong>Wilford Theodore Michongwe</strong>
+                <span>Blantyre, Malawi</span>
+            </div>
             <div class="social-links">
-                <a href="https://www.behance.net/theodormichong" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                <a href="https://www.linkedin.com/in/wilford-theodore-michongwe-54471026b/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/tdore482/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.behance.net/theodormichong" aria-label="Behance">Behance</a>
+                <a href="https://www.linkedin.com/in/wilford-theodore-michongwe-54471026b/" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/tdore482/" aria-label="GitHub">GitHub</a>
+                <a href="https://x.com/wiltheomich" aria-label="Twitter">X</a>
             </div>
         </div>
     </footer>
-    <a href="#home" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-    
+
     <script src="script.js"></script>
-    <script>
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const form = e.target;
-        const formData = new FormData(form);
-        const submitButton = form.querySelector("button[type='submit']");
-        const successMessage = document.createElement("div");
-        successMessage.classList.add("success-message");
-        successMessage.textContent = " Your message has been sent!";
-        form.appendChild(successMessage);
-
-        submitButton.disabled = true;
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        })
-        .then(response => {
-            if (response.ok) {
-                setTimeout(() => {
-                    successMessage.style.display = 'none';
-                    form.reset();
-                    submitButton.disabled = false;
-                }, 5000);
-            } else {
-                throw new Error("Form submission failed.");
-            }
-        })
-        .catch(error => {
-            successMessage.textContent = " There was an error. Please try again.";
-            successMessage.style.backgroundColor = "#f8d7da";
-            successMessage.style.color = "#721c24";
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-                submitButton.disabled = false;
-            }, 5000);
-        });
-    });
-    </script>
-<script>
-  const slides = document.querySelectorAll('.hero-slider .slide');
-  let current = 0;
-
-  function changeSlide() {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  }
-
-  setInterval(changeSlide, 4000); // Change every 4 seconds
-</script>
-
-
-    
-
 </body>
 </html>

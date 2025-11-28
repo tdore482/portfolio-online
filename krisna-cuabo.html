@@ -3,98 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krisna Cuabo Project</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Krisna Cuabo | Portfolio Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="logo">WTM.</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#work" class="nav-item">Work</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="index.html#contact" class="nav-item">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main class="project-detail">
-        <section class="project-hero">
-            <img src="images/KCH.png" alt="Krisna Cuabo Hero">
-            <h1>A Polished, User-Friendly Portfolio for Krisna Cuabo</h1>
-        </section>
-
-        <section class="project-intro">
-            <div>
-                <h3>CLIENT</h3>
-                <p>Krisna Cuabo</p>
+    <main class="case-study-main">
+        
+        <section class="case-hero">
+            <div class="case-hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">A Polished,</span>
+                    <span class="reveal-text" style="color: #FF4136;">User-Friendly Portfolio.</span>
+                </h1>
+                <div class="case-meta fade-in-up">
+                    <div class="meta-item">
+                        <span>Client</span>
+                        <p>Krisna Cuabo</p>
+                    </div>
+                    <div class="meta-item">
+                        <span>Type</span>
+                        <p>Web Design</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>PROJECT TYPE</h3>
-                <p>Web Design</p>
-            </div>
-            <div class="project-description">
-                <p>This portfolio was designed to promote Krisna Cuabo’s brand, increase credibility, and drive client engagement through clear, confident storytelling and design.</p>
-            </div>
-        </section>
-
-        <section class="project-gallery">
-            <img src="images/KrisnaCuabo/KC1.png" alt="Krisna Cuabo Image 1" class="project-img" onclick="openModal(this)">
-            <img src="images/KrisnaCuabo/KC2.png" alt="Krisna Cuabo Image 2" class="project-img" onclick="openModal(this)">
-            <img src="images/KrisnaCuabo/KC3.png" alt="Krisna Cuabo Image 3" class="project-img" onclick="openModal(this)">
-            <img src="images/KrisnaCuabo/KC4.png" alt="Krisna Cuabo Image 4" class="project-img" onclick="openModal(this)">
-        </section>
-
-        <section class="project-features">
-            <div class="feature-column">
-                <h3>Visual Design</h3>
-                <ul>
-                    <li><strong>Color Palette:</strong> Gold, black, and white for sophistication and trust.</li>
-                    <li><strong>Typography:</strong> Rounded fonts paired with bold headers for modern appeal.</li>
-                    <li><strong>Imagery:</strong> High-quality portraits to humanize and build trust.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Navigation & Layout</h3>
-                <ul>
-                    <li><strong>Streamlined Structure:</strong> Clear hierarchy for easy scanning.</li>
-                    <li><strong>Storytelling Flow:</strong> From intro to services, experience, and CTA.</li>
-                    <li><strong>Mobile Responsiveness:</strong> Optimized for all screen sizes.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Core Features</h3>
-                <ul>
-                    <li><strong>About Section:</strong> Strong personal narrative.</li>
-                    <li><strong>Service Cards:</strong> Organized offerings with visuals.</li>
-                    <li><strong>Experience Timeline:</strong> Clear display of roles and achievements.</li>
-                </ul>
-            </div>
-            <div class="feature-column">
-                <h3>Outcome & Impact</h3>
-                <ul>
-                    <li>Boosted Krisna’s personal brand with professional visual design.</li>
-                    <li>Improved engagement and clarity through intuitive navigation.</li>
-                    <li>Created a portfolio that converts visitors into clients.</li>
-                </ul>
+            <div class="case-hero-img-container">
+                <img src="images/KCH.png" alt="Krisna Cuabo Hero">
             </div>
         </section>
 
-        <div class="back-to-work">
-            <a href="index.html#work">Back to My Work</a>
+        <section class="case-intro">
+            <div class="intro-grid">
+                <div class="intro-title reveal-scroll">
+                    <h2>The Goal</h2>
+                </div>
+                <div class="intro-text reveal-scroll">
+                    <p class="highlight-p">Designed to promote Krisna Cuabo’s brand, increase credibility, and drive client engagement through clear, confident storytelling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-gallery">
+            <h2 class="section-title reveal-scroll" style="margin-bottom: 3rem;">Visual Overview</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item span-2 reveal-scroll">
+                    <img src="images/KrisnaCuabo/KC1.png" alt="Krisna Homepage" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/KrisnaCuabo/KC2.png" alt="Krisna About Section" class="zoom-trigger">
+                </div>
+                <div class="gallery-item reveal-scroll">
+                    <img src="images/KrisnaCuabo/KC3.png" alt="Krisna Services" class="zoom-trigger">
+                </div>
+                <div class="gallery-item span-full reveal-scroll">
+                    <img src="images/KrisnaCuabo/KC4.png" alt="Krisna Mobile View" class="zoom-trigger">
+                </div>
+            </div>
+        </section>
+
+        <section class="case-features">
+            <div class="feature-grid">
+                <div class="feature-card reveal-scroll">
+                    <div class="icon-box"><i class="fas fa-palette"></i></div>
+                    <h3>Visual Design</h3>
+                    <p>Gold, black, and white palette for sophistication. Rounded fonts paired with bold headers create a modern appeal, while high-quality portraits build trust.</p>
+                </div>
+                <div class="feature-card reveal-scroll" style="transition-delay: 0.1s;">
+                    <div class="icon-box"><i class="fas fa-sitemap"></i></div>
+                    <h3>Navigation</h3>
+                    <p>Streamlined structure with a storytelling flow that guides users from intro to services, experience, and finally the Call to Action.</p>
+                </div>
+                <div class="feature-card reveal-scroll" style="transition-delay: 0.2s;">
+                    <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Outcome</h3>
+                    <p>Boosted personal branding with professional visuals and improved engagement, creating a portfolio that effectively converts visitors into clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="next-project-container">
+            <a href="index.html#work" class="btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to My Work
+            </a>
         </div>
+
     </main>
 
-    <div id="imgModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <strong>Wilford Theodore Michongwe</strong>
+                <span>Blantyre, Malawi</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Modal Logic
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".zoom-trigger");
+        const closeBtn = document.querySelector(".close-modal");
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    </script>
 </body>
 </html>
