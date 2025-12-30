@@ -1020,3 +1020,42 @@ nav {
         font-size: 1.1rem;
     }
 }
+
+/* Container adjustment to space the buttons out */
+.next-project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between the two buttons */
+    margin-top: 4rem;
+    flex-wrap: wrap; /* Ensures they stack nicely on small mobile screens */
+}
+
+/* Specific styles for the Drive button */
+.btn-drive {
+    border-color: #ffffff; /* White border */
+    color: #ffffff;       /* White text */
+    background: transparent;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 0px; /* Adjust radius to match your existing button */
+    font-weight: 500;
+}
+
+/* Hover Effect: Turns Green with White Text */
+.btn-drive:hover {
+    background-color: #5dd18a; /* The green from your Hero title */
+    border-color: #5dd18a;
+    color: #ffffff;
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 4px 15px rgba(93, 209, 138, 0.4); /* Green glow */
+}
+
+/* Optional: Ensure the icon stands out */
+.btn-drive i {
+    font-size: 1.1em;
+}
