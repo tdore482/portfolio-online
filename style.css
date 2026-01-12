@@ -1059,3 +1059,110 @@ nav {
 .btn-drive i {
     font-size: 1.1em;
 }
+
+/* =========================================
+   GRAPHICS PAGE SPECIFIC STYLES
+   Add to the bottom of style.css
+========================================= */
+
+/* Section styling for the different graphic types */
+.graphics-category {
+    padding: 4rem var(--container-padding);
+    border-top: 1px solid #1a1a1a;
+}
+
+.category-header {
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.category-header h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--accent-yellow); /* Uses your brand yellow */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.category-header p {
+    color: var(--gray-light);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* The Grid System for Graphics */
+.graphics-grid {
+    display: grid;
+    /* Creates a responsive grid that fits as many 300px columns as possible */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.graphic-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #111;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.graphic-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.graphic-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the square without stretching */
+    display: block;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    aspect-ratio: 4/5; /* Gives a standard poster/flyer ratio feel */
+}
+
+.graphic-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Optional: To span 2 rows for tall flyers */
+.portrait-span {
+    grid-row: span 2; 
+}
+/* Note: For portrait-span to work perfectly, you might need to set 
+   specific grid-auto-rows in .graphics-grid, but standard grid works well for simplicity */
+
+@media (max-width: 768px) {
+    .graphics-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/* =========================================
+   DISCLAIMER STYLE
+========================================= */
+.disclaimer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 4rem auto 0; /* Spacing from the grid above */
+    padding: 0 20px;
+    gap: 1rem;
+}
+
+.disclaimer-icon {
+    font-size: 2rem;
+    color: var(--accent-yellow); /* Uses your brand yellow */
+    opacity: 0.8;
+}
+
+.disclaimer-block p {
+    color: var(--gray-light);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+}

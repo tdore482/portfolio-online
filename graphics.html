@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Collection | Theodore Michongwe</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">WTM.</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#work" class="nav-item">Work</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="index.html#contact" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="case-study-main">
+        
+        <section class="case-hero" style="padding-bottom: 2rem;">
+            <div class="case-hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">Visual</span>
+                    <span class="reveal-text" style="color: var(--accent-yellow);">Communication.</span>
+                </h1>
+                <div class="case-meta fade-in-up">
+                    <div class="meta-item">
+                        <span>Scope</span>
+                        <p>Graphic Design Collection</p>
+                    </div>
+                    <div class="meta-item">
+                        <span>Focus</span>
+                        <p>Branding, Events & Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-intro" style="padding-top: 2rem;">
+            <div class="intro-grid">
+                <div class="intro-title reveal-scroll">
+                    <h2>The Gallery</h2>
+                </div>
+                <div class="intro-text reveal-scroll">
+                    <p class="highlight-p">
+                        A curated selection of marketing materials designed to capture attention and communicate value clearly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="graphics-category">
+            <div class="category-header reveal-scroll">
+                <h3>01. Business & Identity</h3>
+                <p>Business cards, Letterheads, and Corporate Stationery.</p>
+            </div>
+            
+            <div class="graphics-grid">
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/business1.png" alt="Business Card Design" class="zoom-trigger">
+                </div>
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/business2.png" alt="Letterhead Mockup" class="zoom-trigger">
+                </div>
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/business3.png" alt="Brand Identity Kit" class="zoom-trigger">
+                </div>
+            </div>
+        </section>
+
+        <section class="graphics-category">
+            <div class="category-header reveal-scroll">
+                <h3>02. Events & Promotion</h3>
+                <p>Event Flyers, Social Media Posters, and Banners.</p>
+            </div>
+            
+            <div class="graphics-grid">
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/events1.png" alt="Music Event Flyer" class="zoom-trigger">
+                </div>
+                <div class="graphic-item portrait-span reveal-scroll">
+                    <img src="graphics/events2.png" alt="Conference Poster" class="zoom-trigger">
+                </div>
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/events3.png" alt="Social Media Post" class="zoom-trigger">
+                </div>
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/events4.png" alt="Promotional Banner" class="zoom-trigger">
+                </div>
+            </div>
+        </section>
+
+        <section class="graphics-category">
+            <div class="category-header reveal-scroll">
+                <h3>03. Information Design</h3>
+                <p>Price Lists, Menus, and Catalogues.</p>
+            </div>
+            
+            <div class="graphics-grid">
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/pricelist1.png" alt="Restaurant Menu" class="zoom-trigger">
+                </div>
+                <div class="graphic-item reveal-scroll">
+                    <img src="graphics/pricelist2.png" alt="Service Price List" class="zoom-trigger">
+                </div>
+                 <div class="graphic-item reveal-scroll">
+                    <img src="graphics/pricelist3.png" alt="Brochure Layout" class="zoom-trigger">
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <div class="disclaimer-block reveal-scroll">
+            <i class="fas fa-exclamation-circle disclaimer-icon"></i>
+            <p>
+                Please note: Some of the designs featured in this collection were created on a voluntary basis or for non-profit initiatives.
+            </p>
+        </div>
+
+        <div class="next-project-container">
+            <a href="index.html#work" class="btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Main Portfolio
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <strong>Wilford Theodore Michongwe</strong>
+                <span>Blantyre, Malawi</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Modal Logic specific to this page
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".zoom-trigger");
+        const closeBtn = document.querySelector(".close-modal");
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        if(closeBtn) closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    </script>
+</body>
+</html>
